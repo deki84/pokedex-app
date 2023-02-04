@@ -17,7 +17,6 @@ export class PokemonListComponent implements OnInit {
           .getMoreData(result.name)
           .subscribe((uniqResponse: any) => {
             this.pokemons.push(uniqResponse);
-            console.log(this.pokemons);
           });
       });
     });
